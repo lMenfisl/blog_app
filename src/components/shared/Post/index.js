@@ -1,23 +1,22 @@
 import React from 'react';
 import './style.scss';
-import { descriptions } from 'jest-config';
 
 const Post = props => {
 
     const {
         title,
-        date_update,
+        data_update,
         likes,
         description,
-        user:{name},
-     } = props.post;
+        user: { name },
+    } = props.post;
 
-     const date=new Date(date_update);
-     const dateUpdate=date.toLocaleDateString();
+    const date = new Date(data_update);
+    const dateUpdate = date.toLocaleDateString();
+
     return (
-
         <div className="post">
-            <i>{date_update}</i>
+            <i>{dateUpdate}</i>
             <span>{likes}</span>
             <h2>{title}</h2>
             <p>{description}</p>
