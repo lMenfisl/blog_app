@@ -6,7 +6,5 @@ export function getPosts() {
         .then(responce => {
             return responce.json();
         })
-        .then(posts=>{
-            console.log(posts);
-        })
+        
 }

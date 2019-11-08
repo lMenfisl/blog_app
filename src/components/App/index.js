@@ -7,7 +7,6 @@ import './style.scss'
 
 function App() {
 
-  console.log('RENDER APP');
   return (
     <div className="app">
       <Header />

@@ -1,8 +1,17 @@
+const initialState = {
+    list: [],
+}
 
 
+export default (state = initialState, action) => {
 
-export default()=>{
-    return{
-        name: 'posts'
+    switch (action.type) {
+        case 'SET_POSTS':
+            return {
+                ...state,
+                list: action.posts,
+            }
+
+        default: return state;
     }
 }

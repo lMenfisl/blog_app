@@ -4,7 +4,6 @@ import {NavLink} from 'react-router-dom';
 
 
 function Header() {
-    console.log('RENDER HEADER');
     return (
         <header className="header">
             <ul className="header__menu">
